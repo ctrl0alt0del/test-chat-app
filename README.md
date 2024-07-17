@@ -63,3 +63,4 @@ This project is a simple chat application built with Next.js, Redux, and Tailwin
 - The application is designed for demonstration purposes and may not be production-ready.
 - User authentication is handled using simple username-based validation. No passwords or advanced authentication mechanisms are implemented.
 - Data is stored in-memory and will be lost when the server is restarted. Persistent storage mechanisms should be added for a production application.
+- Initially presented only 6 users: Alex, Alice, Bob, Charlie, David and Eve
