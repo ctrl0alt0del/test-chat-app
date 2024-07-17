@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chat Application
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is a simple chat application built with Next.js, Redux, and Tailwind CSS. It allows users to sign up, log in, create chats with other users, and send messages in real-time. The application also includes Docker Compose configuration for easy setup and deployment.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Detailed Setup Instructions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js (>= 18.17.0)
+- Docker (>= 20.10.0)
+- Docker Compose (>= 1.29.0)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Installation
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/yourusername/chat-app.git
+   cd chat-app
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
+   ```bash
+     npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Running the Application
 
-## Deploy on Vercel
+**Locally**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Start the development server:**
+   ```bash
+     npm run dev
+   ```
+2. **Open your browser and navigate to**
+   ```
+     localhost:3000
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Using Docker Compose**
+
+1. **Build and start the application:**
+   ```bash
+     docker-compose up --build
+   ```
+2. **Open your browser and navigate to**
+   ```
+     localhost:3000
+   ```
+
+## Technologies Used
+
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **Redux**: A state management library for JavaScript applications.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Docker**: A platform for developing, shipping, and running applications in containers.
+- **Docker Compose**: A tool for defining and running multi-container Docker applications.
+
+## Assumptions and Considerations
+
+- The application is designed for demonstration purposes and may not be production-ready.
+- User authentication is handled using simple username-based validation. No passwords or advanced authentication mechanisms are implemented.
+- Data is stored in-memory and will be lost when the server is restarted. Persistent storage mechanisms should be added for a production application.
