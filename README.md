@@ -17,8 +17,8 @@ This project is a simple chat application built with Next.js, Redux, and Tailwin
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/chat-app.git
-   cd chat-app
+   git clone https://github.com/ctrl0alt0del/test-chat-app.git
+   cd test-chat-app
    ```
 
 2. **Install dependencies:**
@@ -41,11 +41,15 @@ This project is a simple chat application built with Next.js, Redux, and Tailwin
 
 **Using Docker Compose**
 
-1. **Build and start the application:**
+1. **Build the nextjs project**
+   ```bash
+      npm run build
+   ```
+2. **Start the application:**
    ```bash
      docker-compose up --build
    ```
-2. **Open your browser and navigate to**
+3. **Open your browser and navigate to**
    ```
      localhost:3000
    ```
