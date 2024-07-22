@@ -17,7 +17,7 @@ const InputControls: React.FC<InputControlsProps> = ({
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        className="flex-1 p-2 border border-gray-300 rounded mr-2"
+        className="flex-1 p-2 border text-black border-gray-300 rounded mr-2"
       />
       <button
         onClick={onSend}

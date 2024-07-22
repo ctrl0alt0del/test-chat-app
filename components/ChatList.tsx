@@ -26,7 +26,7 @@ const ChatList: React.FC<ChatListProps> = ({
           value={newChatUser}
           onChange={(e) => setNewChatUser(e.target.value)}
           placeholder="Enter username"
-          className="mb-2 p-2 border border-gray-300 rounded w-full"
+          className="mb-2 p-2 border text-black border-gray-300 rounded w-full"
         />
         <button
           onClick={() => onCreateChat(newChatUser)}

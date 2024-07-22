@@ -61,7 +61,7 @@ const HomePage = () => {
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Your name"
-        className="mb-4 p-2 border border-gray-300 rounded"
+        className="mb-4 p-2 border text-black border-gray-300 rounded"
       />
       {isSignUp ? (
         <button
